@@ -1,9 +1,12 @@
+html {
+  background: #263238;
+}
+
 .grid-wrapper {
   display: flex;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background: #263238;
 }
 
 .grid-row {

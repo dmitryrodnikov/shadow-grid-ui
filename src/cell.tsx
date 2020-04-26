@@ -18,7 +18,7 @@ interface CellShadowProps {
 const CellShadow = ({angle, isSelected, shadowLength, shadowBlur, shadowSize, opacity}: CellShadowProps) => {    
   return (
     <div
-      className="cell-dot"
+      className="cell-shadow"
       style={{
         width: CIRCLE_SIZE,
         height: CIRCLE_SIZE,
@@ -56,28 +56,29 @@ export const Cell = ({rowIndex, value, columnIndex, selected, onClick}: CellProp
   return (
     <div 
       className="cell-container"
+      onClick={handleClick}
       style={{
         width: CELL_SIZE,
         height: CELL_SIZE,
       }}
     >
       <div
-        onClick={handleClick}
         className="cell"
         style={{
           width: CIRCLE_SIZE,
           height: CIRCLE_SIZE,
           background: isSelected ? SELECTED_COLOR : BASE_COLOR,
         }}
-      />
-      <CellShadow 
-        isSelected={isSelected} 
-        angle={value} 
-        shadowBlur={shadowBlur}
-        shadowSize={shadowSize}
-        shadowLength={shadowLength} 
-        opacity={opacity} 
-      />
+      >
+        <CellShadow 
+          isSelected={isSelected} 
+          angle={value} 
+          shadowBlur={shadowBlur}
+          shadowSize={shadowSize}
+          shadowLength={shadowLength} 
+          opacity={opacity} 
+        />
+      </div>
     </div>
   );
 }
