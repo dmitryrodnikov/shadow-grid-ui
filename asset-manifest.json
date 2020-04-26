@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/shadow-grid-ui/static/css/main.676c6848.chunk.css",
-    "main.js": "/shadow-grid-ui/static/js/main.b807e0ca.chunk.js",
-    "main.js.map": "/shadow-grid-ui/static/js/main.b807e0ca.chunk.js.map",
+    "main.css": "/shadow-grid-ui/static/css/main.e6961408.chunk.css",
+    "main.js": "/shadow-grid-ui/static/js/main.0e64d22f.chunk.js",
+    "main.js.map": "/shadow-grid-ui/static/js/main.0e64d22f.chunk.js.map",
     "runtime-main.js": "/shadow-grid-ui/static/js/runtime-main.db5a8079.js",
     "runtime-main.js.map": "/shadow-grid-ui/static/js/runtime-main.db5a8079.js.map",
     "static/js/2.20f41b78.chunk.js": "/shadow-grid-ui/static/js/2.20f41b78.chunk.js",
     "static/js/2.20f41b78.chunk.js.map": "/shadow-grid-ui/static/js/2.20f41b78.chunk.js.map",
     "index.html": "/shadow-grid-ui/index.html",
-    "precache-manifest.47b9b71fe4c687ed08198bbb7e027a8d.js": "/shadow-grid-ui/precache-manifest.47b9b71fe4c687ed08198bbb7e027a8d.js",
+    "precache-manifest.64bb273bd4d33713d04de97abe2c5a4e.js": "/shadow-grid-ui/precache-manifest.64bb273bd4d33713d04de97abe2c5a4e.js",
     "service-worker.js": "/shadow-grid-ui/service-worker.js",
-    "static/css/main.676c6848.chunk.css.map": "/shadow-grid-ui/static/css/main.676c6848.chunk.css.map",
+    "static/css/main.e6961408.chunk.css.map": "/shadow-grid-ui/static/css/main.e6961408.chunk.css.map",
     "static/js/2.20f41b78.chunk.js.LICENSE.txt": "/shadow-grid-ui/static/js/2.20f41b78.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.db5a8079.js",
     "static/js/2.20f41b78.chunk.js",
-    "static/css/main.676c6848.chunk.css",
-    "static/js/main.b807e0ca.chunk.js"
+    "static/css/main.e6961408.chunk.css",
+    "static/js/main.0e64d22f.chunk.js"
   ]
 }

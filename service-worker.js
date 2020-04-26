@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/shadow-grid-ui/precache-manifest.47b9b71fe4c687ed08198bbb7e027a8d.js"
+  "/shadow-grid-ui/precache-manifest.64bb273bd4d33713d04de97abe2c5a4e.js"
 );
 
 self.addEventListener('message', (event) => {
