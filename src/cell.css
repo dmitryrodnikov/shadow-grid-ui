@@ -1,0 +1,22 @@
+.cell-container {
+  position: relative;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.cell-dot {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
