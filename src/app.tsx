@@ -111,6 +111,7 @@ const App = () => {
       onKeyDown={handleKeyDown}
       style={{ backgroundColor: calculateBgColor(selected) }}
     >
+      <div className="description">Click on dots or use arrow keys to change background color.</div>
       <div>
         {gridComponent}
       </div>
