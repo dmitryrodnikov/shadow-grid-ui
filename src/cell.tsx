@@ -3,8 +3,8 @@ import './cell.css';
 
 const SELECTED_COLOR = '#fff';
 const BASE_COLOR = '#ffffff20';
-const CELL_SIZE = '50px';
-const CIRCLE_SIZE = '12px';
+const CELL_SIZE = '70px';
+const CIRCLE_SIZE = '16px';
 
 interface CellShadowProps {
   angle: number;

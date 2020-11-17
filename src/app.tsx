@@ -106,14 +106,22 @@ const App = () => {
 
   return (
     <div 
-      className="grid-wrapper" 
+      className="container" 
       tabIndex={0} 
       onKeyDown={handleKeyDown}
       style={{ backgroundColor: calculateBgColor(selected) }}
     >
-      <div className="description">Click on dots or use arrow keys to change background color.</div>
-      <div>
-        {gridComponent}
+      <h1 className="title">Shadow grid concept</h1>
+      <div className="content">
+        <div className="left-column">
+          <div className="description">
+            <p>The idea is that selected element acts like a point of light. Other elements drop shadows as if they are physical objects.</p>
+            <p>Click on dots or use arrow keys -></p>
+          </div>
+        </div>
+        <div className="grid-wrapper">
+          {gridComponent}
+        </div>
       </div>
     </div>
   );
