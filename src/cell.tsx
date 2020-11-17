@@ -29,7 +29,7 @@ const CellShadow = ({angle, isSelected, shadowLength, shadowBlur, shadowSize, op
       }}
     />
   );
-}
+};
 
 interface CellProps {
   rowIndex: number;
@@ -81,4 +81,4 @@ export const Cell = ({rowIndex, value, columnIndex, selected, onClick}: CellProp
       </div>
     </div>
   );
-}
+};

@@ -17,12 +17,12 @@ const initialGrid = [
 ];
 const initialPoint: Point = [0,0];
 
-function getShadowAngle(rowDelta: number, columnDelta: number): number {
+const getShadowAngle = (rowDelta: number, columnDelta: number): number => {
   let absAngle = Math.atan(columnDelta/rowDelta) * 180 / Math.PI;
   return rowDelta < 0 ? -absAngle : 180 - absAngle;
-}
+};
 
-function App() {
+const App = () => {
   const [selected, setSelected] = useState<Point>(initialPoint);
   const [grid, setGrid] = useState(initialGrid);
 
@@ -45,9 +45,9 @@ function App() {
     updateGrid(initialPoint);
   }, [updateGrid]);
 
-  const handleClick = (target: Point) => {
+  const handleClick = useCallback((target: Point) => {
     updateGrid(target);
-  }
+  }, [updateGrid]);
 
   const gridComponent = grid.map((_, rowIndex) => {
     return (
@@ -77,17 +77,17 @@ function App() {
       }
       case 'ArrowDown': {
         if (selected[0] === grid.length - 1) return;
-        updateGrid([selected[0] + 1, selected[1]])
+        updateGrid([selected[0] + 1, selected[1]]);
         break;
       }
       case 'ArrowLeft': {
         if (selected[1] === 0) return;
-        updateGrid([selected[0], selected[1] - 1])
+        updateGrid([selected[0], selected[1] - 1]);
         break;
       }
       case 'ArrowRight': {
         if (selected[1] === grid[0].length - 1) return;
-        updateGrid([selected[0], selected[1] + 1])
+        updateGrid([selected[0], selected[1] + 1]);
         break;
       } 
     }
@@ -104,6 +104,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
