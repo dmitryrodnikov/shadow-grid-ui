@@ -5,22 +5,33 @@ import './app.css';
 type Point = [number, number];
 
 const initialGrid = [
-  [0,0,0,0,0,0],
-  [0,0,0,0,0,0],
-  [0,0,0,0,0,0],
-  [0,0,0,0,0,0],
-  [0,0,0,0,0,0],
-  [0,0,0,0,0,0],
-  [0,0,0,0,0,0],
-  [0,0,0,0,0,0],
-  [0,0,0,0,0,0],
+  [0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0],
 ];
+
+const width = initialGrid[0].length;
+const height = initialGrid.length;
+const range = 240 - 180;
+const horizontalStep = range / width;
+const verticalStep = range / height;
+
 const initialPoint: Point = [0,0];
 
 const getShadowAngle = (rowDelta: number, columnDelta: number): number => {
   let absAngle = Math.atan(columnDelta/rowDelta) * 180 / Math.PI;
   return rowDelta < 0 ? -absAngle : 180 - absAngle;
 };
+
+function calculateBgColor(selected: [number, number]) {
+  const green = horizontalStep * (selected[0] + 1);
+  const blue = verticalStep * (selected[1] + 1);
+  return `hsl(${180 + green}deg,${20 + blue}%, 25%)`;
+}
 
 const App = () => {
   const [selected, setSelected] = useState<Point>(initialPoint);
@@ -98,6 +109,7 @@ const App = () => {
       className="grid-wrapper" 
       tabIndex={0} 
       onKeyDown={handleKeyDown}
+      style={{ backgroundColor: calculateBgColor(selected) }}
     >
       <div>
         {gridComponent}
