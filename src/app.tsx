@@ -115,8 +115,9 @@ const App = () => {
       <div className="content">
         <div className="left-column">
           <div className="description">
-            <p>The idea is that selected element acts like a point of light. Other elements drop shadows as if they are physical objects.</p>
+            <p>The idea is that selected element acts like a point of light. Other elements drop shadow as if they are physical objects.</p>
             <p>Click on dots or use arrow keys -></p>
+            <a href="https://github.com/dmitryrodnikov/shadow-grid-ui">GitHub</a>
           </div>
         </div>
         <div className="grid-wrapper">

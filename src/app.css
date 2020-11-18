@@ -4,11 +4,12 @@
   min-height: 100vh;
   transition: 300ms;
   outline: none;
-  font-size: 24px;
+  font-size: 21px;
 }
 
 .title {
   color: #fff;
+  font-weight: 700;
   margin: 50px 0 0 50px;
 }
 
@@ -21,7 +22,8 @@
 .grid-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 10px 50px 0 0;
+  align-items: flex-start;
+  margin: 50px 0;
 }
 
 .grid-row {
@@ -30,12 +32,15 @@
 
 .left-column {
   max-width: 350px;
-  margin-right: auto;
 }
 
 .description {
   color: white;
   line-height: 1.5;
+}
+
+.description a {
+  color: white;
 }
 
 @media (min-width: 1024px) {
@@ -45,5 +50,6 @@
 
   .grid-wrapper {
     align-items: center;
+    margin: 10px auto 0;
   }
 }

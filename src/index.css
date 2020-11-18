@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Noto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -14,4 +14,18 @@ code {
 
 #root {
   outline: none;
+}
+
+@font-face {
+  font-family: 'Noto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto'), url('./assets/fonts/NotoSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto'), url('./assets/fonts/NotoSans-Bold.ttf') format('truetype');
 }
